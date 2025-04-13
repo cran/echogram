@@ -1,3 +1,24 @@
+# echogram 0.1.3
+
+ * Rd cross-references fixed
+ 
+ * Several changes to echogram() and palette.echogram() functions:
+
+ Color scheme defaults to parula (from pals package). 
+ 
+ When Svmax is used, Sv[Sv > Svmax] <- Svmax.
+
+ xref renamed to x.ref and now its options are "pings", "nmi", and "seconds". when x.ref = 'seconds', the user can define the format ('tformat') for ping time, according to notation of conversion specifications described in strptime().
+ 
+ It is now possible to select the number of colors (col.nb), as an alternative to defining color separation (col.sep).
+ 
+ Arguments depth.grid and x.grid allow to customize depth, and ping (time or distance) labels.
+ 
+ If detected bottom is present in the data, with seabed = TRUE can be added to the echogram.
+ 
+ depth.max, ping.ini and ping.max allow to visualise parts of the echogram.
+
+
 # echogram 0.1.2
 
 * Functions using statements: if (class(x) == "foo") were modified to if(inherits(x, "foo")) to correct errors with R-4.x.x.

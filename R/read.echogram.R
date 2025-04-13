@@ -56,7 +56,7 @@ function( hac, channel = NULL ) {
      Sv <- zz[[1]]
      for (g in 2:length(zz))
       Sv <- mergeSvmat(Sv, zz[[g]])
-     Sv[Sv >= 0] <- NA
+     #Sv[Sv >= 0] <- NA
   }
   frq <- readHAC::parseHAC(chanTup)$"Acoustic frequency"/1000
   attr(Sv, "frequency") <- paste(frq, "kHz")

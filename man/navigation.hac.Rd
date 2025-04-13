@@ -32,7 +32,7 @@ navigation.hac(pos)
 }
 
 \seealso{
- \code{\link{position.hac}}, \code{\link{bearingRhumb}}, \code{\link{distVincentyEllipsoid}}.
+ \code{\link{position.hac}}, \code{\link[geosphere]{bearingRhumb}}, \code{\link[geosphere]{distVincentyEllipsoid}}.
 }
 \examples{
  hacfile <- system.file("hac", "D20150510-T202221.hac", package="echogram")
